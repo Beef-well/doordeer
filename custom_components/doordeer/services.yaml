@@ -1,0 +1,22 @@
+unlock:
+  name: Unlock Door
+  description: Send an unlock command directly to the doordeer device.
+  fields: {}
+
+change_password:
+  name: Change Device Password
+  description: Update the login credentials on the doordeer device.
+  fields:
+    username:
+      name: Username
+      description: Username to update (leave blank for configured user)
+      required: false
+      selector:
+        text:
+    password:
+      name: New Password
+      description: New password to set
+      required: true
+      selector:
+        text:
+          type: password

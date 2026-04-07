@@ -1,0 +1,26 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Doordeer Smart Intercom",
+        "description": "Enter your doordeer device details. The RC4 key is obtained from doordeer smart Inc.",
+        "data": {
+          "device_ip": "Device IP Address",
+          "device_port": "Device Port (default 3800)",
+          "username": "Username",
+          "password": "Password",
+          "rc4_key": "RC4 Encryption Key"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Cannot connect to device. Check the IP address and that the device is on your LAN.",
+      "invalid_auth": "Authentication failed. Check username, password, and RC4 key.",
+      "invalid_rc4_key": "RC4 key is invalid. Contact doordeer smart Inc for your key.",
+      "unknown": "Unexpected error. Check the HA logs."
+    },
+    "abort": {
+      "already_configured": "This device is already configured."
+    }
+  }
+}
